@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Login tests" duration-ms="31" started-at="2019-01-22T22:43:14Z" finished-at="2019-01-22T22:43:14Z">
+    <groups>
+    </groups>
+    <test name="login tests" duration-ms="31" started-at="2019-01-22T22:43:14Z" finished-at="2019-01-22T22:43:14Z">
+      <class name="utlities.hereUp">
+        <test-method status="PASS" signature="elebele()[pri:0, instance:utlities.hereUp@4157f54e]" name="elebele" duration-ms="0" started-at="2019-01-22T22:43:14Z" finished-at="2019-01-22T22:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elebele -->
+        <test-method status="PASS" signature="heriqaqas()[pri:0, instance:utlities.hereUp@4157f54e]" name="heriqaqas" duration-ms="0" started-at="2019-01-22T22:43:14Z" finished-at="2019-01-22T22:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- heriqaqas -->
+      </class> <!-- utlities.hereUp -->
+    </test> <!-- login tests -->
+  </suite> <!-- Login tests -->
+</testng-results>

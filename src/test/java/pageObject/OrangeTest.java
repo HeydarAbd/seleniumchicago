@@ -1,4 +1,4 @@
-package pajeObject;
+package pageObject;
 
 import org.testng.annotations.Test;
 import pages.OrangeLoginPage;

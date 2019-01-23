@@ -1,11 +1,9 @@
-package pajeObject;
+package pageObject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.OrangeHomePage;
 import pages.OrangeLoginPage;
@@ -17,7 +15,6 @@ import java.util.List;
 
 public class OrangeAdmin extends TestBase {
 
-    OrangeLoginPage olp = new OrangeLoginPage();
 
 
 
@@ -26,7 +23,7 @@ public class OrangeAdmin extends TestBase {
 
         Driver.getDriver().get("https://opensource-demo.orangehrmlive.com");
         Thread.sleep(2000);
-//        OrangeLoginPage olp = new OrangeLoginPage();
+        OrangeLoginPage olp = new OrangeLoginPage();
         olp.logIn(Config.getProperty("username"), Config.getProperty("password"));
 
 
@@ -43,9 +40,9 @@ public class OrangeAdmin extends TestBase {
     @Test
     public void jobTitleVerification() throws InterruptedException {
 
-        //driver.get("https://opensource-demo.orangehrmlive.com");
         Driver.getDriver().get(Config.getProperty("url"));
         Thread.sleep(2000);
+        OrangeLoginPage olp = new OrangeLoginPage();
         olp.logIn(Config.getProperty("username"), Config.getProperty("password"));
 
         OrangeHomePage ohp = new OrangeHomePage(Driver.getDriver());
@@ -76,14 +73,6 @@ public class OrangeAdmin extends TestBase {
 
 
 
-
-
-    @Test
-    public void negativeLogin(){
-        Driver.getDriver().get(Config.getProperty("url"));
-
-
-    }
 
 
 

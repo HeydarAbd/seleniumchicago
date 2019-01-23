@@ -18,7 +18,6 @@ public class TestBase {
 
 
 
-       // public static WebDriver driver;
         public static Faker faker;
         Random random = new Random();
         Actions actions;
@@ -33,11 +32,7 @@ public class TestBase {
 
         @BeforeMethod
         public void startTest(){
-           // driver = new ChromeDriver();
             faker = new Faker();
-           // driver.manage().window().maximize();
-          //  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-          //  driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
             actions = new Actions(Driver.getDriver());
 
         }
@@ -45,9 +40,11 @@ public class TestBase {
 
         @AfterMethod
         public void cleaning(){
-            //Driver.closeDriver();
+            Driver.closeDriver();
 
         }
+
+
 
 
 
